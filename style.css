@@ -7,6 +7,14 @@
     text-decoration: none;
 }
 
+::-webkit-scrollbar{
+    display: none;
+}
+
+body{
+    overflow-x: hidden;
+}
+
 html{
     font-size: 62.5%;
 }
@@ -275,7 +283,7 @@ html{
 .banner button{
     width:25rem;
     height:7rem;
-    background-color: #000;
+    background-color: rgb(41, 41, 41);
     border: none;
     font-family: "Mulish",serif;
     font-size: 2rem;
