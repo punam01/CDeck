@@ -719,7 +719,7 @@ html{
     position: absolute;
     top:100vh;
     right: 4rem;
-    bottom: 1em;
+    bottom: 0em;
     width: 3em;
     pointer-events: none;
 }
