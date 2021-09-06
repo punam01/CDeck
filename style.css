@@ -474,6 +474,86 @@ html{
     backface-visibility: hidden;
 }
 
+
+
+/*Examdeck*/
+.exam-deck{
+    width: 100%;
+    padding-bottom: 15rem;
+}
+.exam-deck .nav_links{    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.exam-deck button{
+    width:25rem;
+    height:7rem;
+    background-color: rgb(41, 41, 41);
+    border: none;
+    font-family: "Mulish",serif;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color:#fff;
+    text-shadow: 0 0.2rem 0.4rem rgba(0,0,0,0.2);
+    box-shadow: 0 0.3rem 0.5rem rgba(0,0,0,0.4);
+    cursor: pointer;
+}
+.exam-deck .e-toggle{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.e-toggle .e-paper{
+    width:90%;
+    height:80%;
+}
+.e-toggle .e-notes{
+    width:80%;
+    height:80%;
+    display: none;
+}
+.exam-deck .contentBox{
+    position:relative;
+    margin: 10px 20px;
+    box-shadow:0 .1rem .8rem rgba(0,0,0,0.4);
+}
+.exam-deck .contentBox button{
+    width: 100%;
+    position: relative;
+    background-color: #4b4b4b;
+    padding:20px;
+    color:#fff;
+    cursor: pointer;
+    font-family: "Baloo Da 2",serif;
+    font-size: 2rem;
+    line-height: 2rem;
+    font-weight: 100;
+    text-align: left;
+}
+.exam-deck .contentBox button::before{
+    content:"";
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+}
+.contentBox .content{
+    position: relative;
+    background-color: #fff;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    overflow-y: auto;
+}
+.contentBox .content.active{
+    height: 30rem;
+    padding: 10px;
+}
+
 /*Team*/
 .team{
     display: flex;
@@ -750,7 +830,7 @@ html{
         font-size: 3rem;
     }
 
-    .banner button{
+    .banner button,.exam-deck button{
         width: 20rem;
         height: 5rem;
         font-size:1.6rem
@@ -812,7 +892,7 @@ html{
     .banner p{
         font-size: 2.5rem;
     }
-    .banner button{
+    .banner button,.exam-deck button{
         width:18rem;
         height:4rem;
         font-size: 1.5rem;
