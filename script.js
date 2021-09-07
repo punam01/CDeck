@@ -48,9 +48,10 @@ let labelBtn=document.querySelectorAll('.head');
 function expand(val){
     var x = document.querySelector("."+val);
     if (x.style.display === "none") {
-        x.style.display = "block";
+        x.style.display = "flex";
     }
     else {
+        console.log(x.style);
         x.style.display = "none";
     }
 }
