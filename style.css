@@ -519,6 +519,7 @@ html{
     position:relative;
     margin: 10px 50px 10px 50px;
     bottom: 5rem;
+    background-color: rgb(132, 96, 165);
     box-shadow:0 .1rem .8rem rgba(0,0,0,0.2);
 }
 .exam-deck .contentBox button{
@@ -550,7 +551,7 @@ html{
 .content6,
 .content7{
     position: relative;
-    height: 5rem;
+    height: 25%;
     visibility:hidden;
     color:black;
     display: none;
@@ -559,7 +560,8 @@ html{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+    flex-flow: wrap;
     transition: .5s;
 }
 .contentBox .content7.active,
@@ -576,7 +578,7 @@ html{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;    
+    justify-content: space-around;    
 }
 .contentBox .content1:hover{
     box-shadow: inset 0 .1rem  rgba(0,0,0,0.6);
@@ -594,6 +596,16 @@ html{
     color: #e2b646;
     padding: 10px;
     text-shadow: 0 0.2rem 0.4rem rgba(0,0,0,0.2);
+}
+
+.section2,
+.section1{
+    width:45%;
+    height: 300px;
+    margin: 10px;
+    background-color: rgb(177, 226, 43);
+    box-sizing: border-box;
+
 }
 /*Team*/
 .team{
