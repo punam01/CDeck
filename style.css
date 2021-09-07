@@ -147,6 +147,11 @@ html{
     }
     100%{
         transform: rotate(360deg);
+
+
+
+
+
     }
 }
 .container{
@@ -383,7 +388,7 @@ html{
 /*About us*/
 .about-us{
     width: 100%;
-    background-color: #f5f5f5;
+    background-color: #ffffff;
     padding-bottom: 15rem;
 }
 .section-header{
@@ -475,13 +480,135 @@ html{
 }
 
 /*Team*/
-.team{
+.containerN{
+    position: relative;
+    z-index: 3;
+    display: flex;
+    margin-top: 8rem;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: -55px 0;
+}
+
+.containerN .card{
+    position: relative;
+    width: 28rem;
+    height: 38rem;
+    margin: 20px;
+    display: flex;
+    background-color: #fbfbfb;
+    box-shadow: 2px 2px 2px 2px #e7e5e5;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.containerN .card .content{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 37rem;
+    height: 45rem;
+    flex-direction: column;
+    transition: .5s;
+}
+
+
+.containerN .card .content .imgBx{
+    position: relative;
+    width: 90px;
+    height: 90px;
+    margin-top: -30px;
+    border-radius: 50%;
+    overflow:hidden;
+    transition: all .5s ease-in-out;
+}
+
+.containerN .card:hover .content .imgBx{
+    width: 110px;
+    height: 110px;
+    transform: scale(1.1);
+}
+
+.containerN .card .content .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.containerN .card .content .contentBx h2{
+    color: #111127;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family:Arial;
+    font-weight:bolder;
+    font-size: 18px;
+    text-align: center;
+    margin: 35px 0 10px;
+    line-height: 1.1em;
+}
+.containerN .card .content .contentBx h3{
+    color:#e2b646;
+    letter-spacing: 1px;
+    font-family:Arial;
+    font-weight: 200;
+    font-size: 14px;
+    text-align: center;
+    margin: 10px 0 10px;
+    line-height: 1.1em;
+}
+
+.containerN .card .content .contentBx p{
+    font-family:Arial;
+    font-size:13px;
+    line-height: 1.6rem;
+    font-weight: 100;
+    text-align: center;
+    color:  #111127;
+    width: 87%;
+    margin: 3px 17px;
+}
+
+.containerN .card .sci{
+    position: absolute;
+    bottom: 50px;
+    display: flex;
+}
+
+.containerN .card .sci li{
+    list-style: none;
+    margin: -10px 10px;
+    transform: translateY(40px);
+    transition: .5s;
+    opacity: 0;
+    transition-delay: calc(.1s * var(--i));
+}
+
+.containerN .card:hover .sci li{
+    transform:translateY(0px) ;
+    opacity: 1;
+}
+
+.containerN .card .sci li a{
+    color: #111127;
+    font-size: 24px;
+
+}
+ .team{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: #f3f4f8;
     padding: 0 5rem 20rem 5rem;
 }
+/*
 .cards-wrapper{
     display: flex;
     justify-content: space-evenly;
@@ -563,7 +690,7 @@ html{
     color: #eee;
     border-radius: .3rem;
     box-shadow:0 .1rem .8rem rgba(0,0,0,0.4);
-}
+} */
 
 /*contact*/
 .contact{
