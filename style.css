@@ -479,6 +479,127 @@ html{
     backface-visibility: hidden;
 }
 
+
+
+/*Examdeck*/
+.exam-deck{
+    width: 100%;
+    padding-bottom: 15rem;
+}
+.exam-deck .nav_links{    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.exam-deck button{
+    width:25rem;
+    height:7rem;
+    background-color: rgb(41, 41, 41);
+    border: none;
+    font-family: "Mulish",serif;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color:#fff;
+    text-shadow: 0 0.2rem 0.4rem rgba(0,0,0,0.2);
+    box-shadow: 0 0.3rem 0.5rem rgba(0,0,0,0.4);
+    cursor: pointer;
+}
+.exam-deck .e-toggle{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.e-toggle .e-paper{
+    width:90%;
+    height:80%;
+}
+.e-toggle .e-notes{
+    width:90%;
+    height:80%;
+    display: none;
+}
+.exam-deck .contentBox{
+    position:relative;
+    margin: 10px 50px 10px 50px;
+    bottom: 5rem;
+    box-shadow:0 .1rem .8rem rgba(0,0,0,0.2);
+}
+.exam-deck .contentBox button{
+    width: 100%;
+    position: relative;
+    background-color: #4b4b4b;
+    padding:20px;
+    color:#fff;
+    cursor: pointer;
+    font-family: "Baloo Da 2",serif;
+    font-size: 2rem;
+    line-height: 2rem;
+    font-weight: 100;
+    text-align: left;
+}
+.exam-deck .contentBox button::before{
+    content:"";
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+}
+.contentBox .content1,
+.content2,
+.content3,
+.content4,
+.content5,
+.content6,
+.content7{
+    position: relative;
+    height: 5rem;
+    visibility:hidden;
+    color:black;
+    display: none;
+    transition: 0.5s;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    transition: .5s;
+}
+.contentBox .content7.active,
+.content1.active,
+.content2.active,
+.content3.active,
+.content4.active,
+.content5.active,
+.content6.active{
+    height: 30rem;
+    padding: 2px;
+    display: block;
+    visibility: visible;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;    
+}
+.contentBox .content1:hover{
+    box-shadow: inset 0 .1rem  rgba(0,0,0,0.6);
+}
+.contentBox .content1,.content2,.content3,.content4,.content5,.content6,.content7 a{
+    font-family: "Baloo Da 2",serif;
+    font-size:1rem;
+    margin-top: 0%;
+    transform: scaleY(1);
+    text-transform: uppercase;
+    color:black;
+    
+    text-decoration: none;
+    visibility: visible;
+    color: #e2b646;
+    padding: 10px;
+    text-shadow: 0 0.2rem 0.4rem rgba(0,0,0,0.2);
+}
 /*Team*/
 .containerN{
     position: relative;
@@ -877,7 +998,7 @@ html{
         font-size: 3rem;
     }
 
-    .banner button{
+    .banner button,.exam-deck button{
         width: 20rem;
         height: 5rem;
         font-size:1.6rem
@@ -939,7 +1060,7 @@ html{
     .banner p{
         font-size: 2.5rem;
     }
-    .banner button{
+    .banner button,.exam-deck button{
         width:18rem;
         height:4rem;
         font-size: 1.5rem;
