@@ -13,11 +13,11 @@
 }
 
 body{
+    height: 100%;
     overflow-x: hidden;
     overflow-y: auto;
     position: relative;
    } 
-
 
 html{
     font-size: 62.5%;
@@ -484,6 +484,7 @@ html{
     padding-bottom: 15rem;
     background-color: #eee;
     overflow-x: scroll;
+    scroll-behavior: smooth;
 }
 .exam-deck .nav_links{    
     display: flex;
@@ -1033,6 +1034,18 @@ html{
     }
     .footer-content{
         width: 80%;
+    }
+    .exam-deck{
+        height:105rem;
+    }
+    .exam-deck button{
+        width: 15rem;
+        height: 3rem;
+        font-size:1rem;
+    }
+    .exam-deck .e-toggle{
+        height:80rem ;
+        padding:0 4rem 0 5rem;
     }
 }
 
