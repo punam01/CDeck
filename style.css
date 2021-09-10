@@ -561,7 +561,7 @@ html{
     display: none;
     transition:all 0.5s;
     overflow-y: auto;
-    display: flex;
+    display: none;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
@@ -597,10 +597,8 @@ html{
     visibility: visible;
     color: #e2b646;
     padding: 10px;
-    text-shadow: 0 0.2rem 0.4rem rgba(0,0,0,0.2);
-    
+    text-shadow: 0 0.2rem 0.4rem rgba(0,0,0,0.2);    
 }
-
 
 .table-container{
     padding: 0 10%;
