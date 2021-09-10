@@ -14,6 +14,7 @@
 
 body{
     overflow-x: hidden;
+    overflow-y: auto;
     position: relative;
    } 
 
@@ -147,11 +148,6 @@ html{
     }
     100%{
         transform: rotate(360deg);
-
-
-
-
-
     }
 }
 .container{
@@ -174,6 +170,7 @@ html{
 }
 .change .hamburger-menu{
     right: 33rem;
+    position: fixed;
 }
 .line{
     width: 100%;
